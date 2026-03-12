@@ -26,7 +26,7 @@ st.write("""
 """ )
 
 st.sidebar.write("""
-## Anderson Ribeiro da Silva
+## Moacyr Marques Neto
 """ )
 
 aval = ["Autoavaliação","Gestor"]
