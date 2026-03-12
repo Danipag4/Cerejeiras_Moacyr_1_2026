@@ -124,7 +124,7 @@ df_filtered5 = df[df["Compet"] == Compet_Desemp]
 df_MédiaGeral = df_filtered5.groupby("Nome")[["Autoavaliação","Gestor"]].mean().round(decimals=1).reset_index()
 #df_MédiaGeral
 
-fig_DesenvGeral = px.bar(df_MédiaGeral, y=aval1, x="Nome", barmode='group',color_discrete_map = {"Autoavaliação":"#094E86", "Gestor":"#EC6227"})
+fig_DesenvGeral = px.bar(df_MédiaGeral, y=aval1, x="Nome",height=500, barmode='group',color_discrete_map = {"Autoavaliação":"#094E86", "Gestor":"#EC6227"})
 fig_DesenvGeral.update_layout(xaxis_title="Colaboradores do Setor", yaxis_title="Médias")
 fig_DesenvGeral
 
