@@ -80,7 +80,7 @@ df_filtered2 = df_filtered[df["Compet"] == unica_Competencia]
 
 df_filtered2["Pergunta"] = (df_filtered2["Pergunta"].str.replace(" - ", "<br>") .str.replace(" / ", "<br>"))
 
-fig_Perg = px.bar(df_filtered2, y="Pergunta", x=aval1, orientation="h", height=500, barmode="group",color_discrete_map={"Autoavaliação": "#094E86","Gestor": "#EC6227"})
+fig_Perg = px.bar(df_filtered2, y="Pergunta", x=aval1, orientation="h", height=300, barmode="group",color_discrete_map={"Autoavaliação": "#094E86","Gestor": "#EC6227"})
 
 fig_Perg.update_layout(xaxis_title="Médias", yaxis_title="Perguntas")
 
